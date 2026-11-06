@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --rose: #c97b84;
+  --rose-dark: #a85c66;
+  --cream: #fbf6f1;
+  --sand: #f3e9e1;
+  --ink: #2b2226;
+  --muted: #7a6e72;
+  --line: #eadfd8;
+  --white: #fff;
+  --radius: 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 12px 22px; border-radius: 999px; border: 1px solid var(--rose);
+  background: var(--rose); color: #fff; font-weight: 600; text-decoration: none;
+  cursor: pointer; transition: background .15s, transform .15s;
+}
+.btn:hover { background: var(--rose-dark); border-color: var(--rose-dark); }
+.btn.ghost { background: transparent; color: var(--rose-dark); }
+.btn.ghost:hover { background: rgba(201, 123, 132, .1); }
+.btn.sm { padding: 7px 14px; font-size: 14px; }
